@@ -1,0 +1,13 @@
+function titleCase(str) {
+str = str.toLowerCase();
+var strArr = str.split(" ");
+var UCstrArr = strArr.map(function(val){
+
+return val.charAt(0).toUpperCase() + val.substr(1);
+
+});
+var UC = UCstrArr.join(" ");
+ return (UC);
+}
+
+titleCase("HERE IS MY HANDLE HERE IS MY SPOUT");
